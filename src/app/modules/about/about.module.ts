@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from '../../shared/shared.module';
 
 /* Container */
-import { WorkContainer } from './container/work.component';
+import { AboutContainer } from './container/about.component';
 
 /* Components */
 import { LayoutDefaultComponent } from '../../shared/layout-default/layout-default.component';
@@ -14,13 +14,13 @@ const routes: Routes = [
   {
     path: '', component: LayoutDefaultComponent,
     children: [
-      { path: 'work', component: WorkContainer }
+      { path: 'about', component: AboutContainer }
     ]
   }
 ];
 
 const components = [
-  WorkContainer
+  AboutContainer
 ];
 
 @NgModule({
@@ -33,4 +33,4 @@ const components = [
   exports: components
 })
 
-export class WorkModule {}
+export class AboutModule {}

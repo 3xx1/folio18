@@ -1,0 +1,17 @@
+.folio-navbar {
+  width: 100%;
+  padding: 20px 0;
+
+  .menu {
+    display: flex;
+    float: right;
+
+    .menu-item {
+      padding: 0 30px;
+    }
+  }
+
+  .logo {
+    padding: 0 10px;
+  }
+}
