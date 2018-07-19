@@ -1,0 +1,14 @@
+@import './colors.scss';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: $color-dark-gray;
+  font-family: 'Times New Roman'; // placeholder font: TODO - replace with good one
+  margin: 0;
+}
