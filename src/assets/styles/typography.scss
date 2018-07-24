@@ -1,28 +1,5 @@
 @import './colors.scss';
 
-@font-face {
-  font-family: 'Perpetua';
-  font-weight: normal;
-  src: URL('../fonts/perpetua.ttf') format('ttf');
-}
-@font-face {
-  font-family: 'Perpetua';
-  font-weight: bold;
-  src: URL('../fonts/perpetuaBold.ttf') format('ttf');
-}
-@font-face {
-  font-family: 'Perpetua';
-  font-weight: normal;
-  font-style: italic;
-  src: URL('../fonts/perpetuaItalic.ttf') format('ttf');
-}
-@font-face {
-  font-family: 'Perpetua';
-  font-weight: bold;
-  font-style: italic;
-  src: URL('../fonts/perpetuaBoldItalic.ttf') format('ttf');
-}
-
 h1,
 h2,
 h3,
@@ -32,6 +9,6 @@ h6,
 p,
 a {
   color: $color-dark-gray;
-  font-family: 'Perpetua'; // placeholder font: TODO - replace with good one
+  font-family: 'EB Garamond', serif;
   margin: 0;
 }
