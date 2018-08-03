@@ -16,7 +16,8 @@ const routes: Routes = [
     children: [
       { path: 'work', component: WorkContainer }
     ]
-  }
+  },
+  { path: '**', redirectTo: 'work' }
 ];
 
 const components = [
