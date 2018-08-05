@@ -14,7 +14,7 @@ export class WorkContainer implements OnInit {
 
   public loggedIn: boolean = true;
 
-  constructor(private auth: AuthService) {
+  constructor(public auth: AuthService) {
     console.log(this.auth.loggedIn, 'this.auth')
   }
 
