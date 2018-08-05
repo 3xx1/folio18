@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -10,7 +11,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { AuthGuard } from '../../services/auth.guard';
 
 /* Container */
-import { AboutContainer } from './container/about.component';
+import { AuthContainer } from './container/auth.component';
 
 /* Components */
 import { LayoutDefaultComponent } from '../../shared/layout-default/layout-default.component';
@@ -19,18 +20,19 @@ const routes: Routes = [
   {
     path: '', component: LayoutDefaultComponent,
     children: [
-      { path: 'about', component: AboutContainer, canActivate: [ AuthGuard ] }
+      { path: 'auth', component: AuthContainer }
     ]
   }
 ];
 
 const components = [
-  AboutContainer
+  AuthContainer
 ];
 
 @NgModule({
   imports: [
     CommonModule,
+    HttpClientModule,
     FormsModule,
     RouterModule.forChild(routes),
     SharedModule
@@ -40,4 +42,4 @@ const components = [
   exports: components
 })
 
-export class AboutModule {}
+export class AuthModule {}
