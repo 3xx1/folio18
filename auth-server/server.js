@@ -10,8 +10,8 @@ app.use(expressJwt({secret: 'todo-app-super-shared-secret'}).unless({path: ['/ap
 
 app.post('/api/auth', function(req, res) {
   const body = req.body;
-  console.log(body, 'body');
-  if(body.password != 'password') return res.sendStatus(401);
+
+  if (body.password != 'password') return res.sendStatus(401);
   var token = jwt.sign({userID: 1}, 'todo-app-super-shared-secret', {expiresIn: '2h'});
   res.send({token});
 });

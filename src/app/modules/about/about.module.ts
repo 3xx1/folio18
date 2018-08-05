@@ -19,7 +19,7 @@ const routes: Routes = [
   {
     path: '', component: LayoutDefaultComponent,
     children: [
-      { path: 'about', component: AboutContainer, canActivate: [ AuthGuard ] }
+      { path: 'about', component: AboutContainer }
     ]
   }
 ];

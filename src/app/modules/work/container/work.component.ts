@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+/* Services */
+import { AuthService } from '../../../services/auth.service';
 
 @Component({
   selector: 'work-container',
@@ -7,8 +10,16 @@ import { Component } from '@angular/core';
   providers: []
 })
 
-export class WorkContainer {
+export class WorkContainer implements OnInit {
 
-  constructor() {}
+  public loggedIn: boolean = true;
+
+  constructor(private auth: AuthService) {
+    console.log(this.auth.loggedIn, 'this.auth')
+  }
+
+  ngOnInit() {
+    this.loggedIn = this.auth.loggedIn;
+  }
 
 }

@@ -3,5 +3,10 @@
     padding-top: 100%;
     margin-bottom: 30px;
     background: #D7D7D7;
+
+    // temporary class for debugging purpose
+    &.secured {
+      background: #FFD777;
+    }
   }
 }

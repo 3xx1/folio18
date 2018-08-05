@@ -1,52 +1,93 @@
-<div class="work-overview row">
-  <div class="col-lg-4 col-md-6 col-xs-12">
-    <div class="project-thumb">
-      <!-- <p>project 1</p> -->
+<div class="work-overview">
+  <!-- Public -->
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb">
+        <!-- <p>project 1</p> -->
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb">
+        <!-- <p>project 2</p> -->
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb">
+      <!-- <p>project 3</p> -->
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb">
+      <!-- <p>project 4</p> -->
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb">
+      <!-- <p>project 5</p> -->
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb">
+      <!-- <p>project 6</p> -->
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb">
+      <!-- <p>project 7</p> -->
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb">
+      <!-- <p>project 8</p> -->
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb">
+      <!-- <p>project 9</p> -->
+      </div>
     </div>
   </div>
-  <div class="col-lg-4 col-md-6 col-xs-12">
-    <div class="project-thumb">
-      <!-- <p>project 2</p> -->
+  <!-- Private -->
+  <div class="row">
+    <div *ngIf="!auth.loggedIn" class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb">
+        <!-- <p>project +</p> -->
+      </div>
     </div>
-  </div>
-  <div class="col-lg-4 col-md-6 col-xs-12">
-    <div class="project-thumb">
-    <!-- <p>project 3</p> -->
+    <div *ngIf="auth.loggedIn" class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb secured">
+        <!-- <p>project 1</p> -->
+      </div>
     </div>
-  </div>
-  <div class="col-lg-4 col-md-6 col-xs-12">
-    <div class="project-thumb">
-    <!-- <p>project 4</p> -->
+    <div *ngIf="auth.loggedIn" class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb secured">
+        <!-- <p>project 2</p> -->
+      </div>
     </div>
-  </div>
-  <div class="col-lg-4 col-md-6 col-xs-12">
-    <div class="project-thumb">
-    <!-- <p>project 5</p> -->
+    <div *ngIf="auth.loggedIn" class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb secured">
+        <!-- <p>project 3</p> -->
+      </div>
     </div>
-  </div>
-  <div class="col-lg-4 col-md-6 col-xs-12">
-    <div class="project-thumb">
-    <!-- <p>project 6</p> -->
+    <div *ngIf="auth.loggedIn" class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb secured">
+        <!-- <p>project 4</p> -->
+      </div>
     </div>
-  </div>
-  <div class="col-lg-4 col-md-6 col-xs-12">
-    <div class="project-thumb">
-    <!-- <p>project 7</p> -->
+    <div *ngIf="auth.loggedIn" class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb secured">
+        <!-- <p>project 5</p> -->
+      </div>
     </div>
-  </div>
-  <div class="col-lg-4 col-md-6 col-xs-12">
-    <div class="project-thumb">
-    <!-- <p>project 8</p> -->
+    <div *ngIf="auth.loggedIn" class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb secured">
+        <!-- <p>project 6</p> -->
+      </div>
     </div>
-  </div>
-  <div class="col-lg-4 col-md-6 col-xs-12">
-    <div class="project-thumb">
-    <!-- <p>project 9</p> -->
-    </div>
-  </div>
-  <div class="col-lg-4 col-md-6 col-xs-12">
-    <div class="project-thumb">
-    <!-- <p>project +</p> -->
+    <div *ngIf="auth.loggedIn" class="col-lg-4 col-md-6 col-xs-12">
+      <div class="project-thumb secured">
+        <!-- <p>project 7</p> -->
+      </div>
     </div>
   </div>
 </div>
