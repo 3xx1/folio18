@@ -1,0 +1,21 @@
+@import './colors.scss';
+
+button {
+  font-family: 'Averia Serif Libre', cursive;
+  background: $color-dark-gray;
+  color: $color-white;
+  border: none;
+  padding: 5px;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+input {
+  font-family: 'Averia Serif Libre', cursive;
+  border: none;
+  border-bottom: 1px solid $color-light-gray;
+  width: 100%;
+}
