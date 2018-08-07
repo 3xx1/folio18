@@ -5,17 +5,45 @@ button {
   background: $color-dark-gray;
   color: $color-white;
   border: none;
-  padding: 5px;
+  border-radius: 2px;
+  padding: 8px;
   width: 100%;
+  transition: opacity .25s ease;
+  outline: none;
 
   &:hover {
     cursor: pointer;
+    opacity: 0.8;
   }
 }
 
 input {
   font-family: 'Averia Serif Libre', cursive;
+  color: $color-dark-gray;
   border: none;
   border-bottom: 1px solid $color-light-gray;
+  transition: border-color .25s ease;
   width: 100%;
+  outline: none;
+
+  &:focus {
+    border-color: $color-medium-gray;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color-light-gray;
+  }
+  &::-moz-placeholder {
+    color: $color-light-gray;
+  }
+  &:-ms-input-placeholder {
+    color: $color-light-gray;
+  }
+  &:-moz-placeholder {
+    color: $color-light-gray;
+  }
+
+  &[type="password"] {
+    text-align: center;
+  }
 }

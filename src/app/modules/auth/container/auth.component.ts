@@ -13,7 +13,8 @@ import { first } from 'rxjs/operators';
 export class AuthContainer {
 
   public password: string;
-  public error: string;
+  public error: string = '';
+  public showError: boolean = false;
 
   constructor(private auth: AuthService, private router: Router) {}
 
@@ -22,7 +23,13 @@ export class AuthContainer {
       .pipe(first())
       .subscribe(
         result => this.router.navigate(['/work']),
-        err => this.error = 'Could not authenticate'
+        err => {
+          this.error = 'could not authenticate';
+          this.showError = true;
+          setTimeout(() => {
+            this.showError = false;
+          }, 2500);
+        }
       );
   }
 

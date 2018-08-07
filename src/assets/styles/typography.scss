@@ -19,8 +19,7 @@ h3,
 h4,
 h5,
 h6,
-p,
-a {
+p {
   color: $color-dark-gray;
   font-family: 'Averia Serif Libre', cursive;
   margin: 0;
@@ -55,5 +54,12 @@ p {
 }
 
 a {
+  font-family: 'Averia Serif Libre', cursive;
+  margin: 0;
   font-weight: $font-weight-regular;
+  color: $color-japanese-blue;
+
+  &:hover {
+    color: $color-japanese-blue-dark;
+  }
 }
