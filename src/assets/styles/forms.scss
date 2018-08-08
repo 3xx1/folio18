@@ -21,6 +21,7 @@ input {
   font-family: 'Averia Serif Libre', cursive;
   color: $color-dark-gray;
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid $color-light-gray;
   transition: border-color .25s ease;
   width: 100%;

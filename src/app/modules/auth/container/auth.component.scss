@@ -1,10 +1,14 @@
 @import '../../../../assets/styles/colors';
 
 .auth-container {
-  padding-top: 50px;
+  padding-top: 20px;
 
   .message {
     padding: 30px 0 0 0;
+
+    &.mobile {
+      padding-top: 50px;
+    }
   }
 
   .password-field {
