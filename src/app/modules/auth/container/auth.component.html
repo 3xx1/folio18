@@ -27,8 +27,6 @@
     <!-- Mobile -->
     <div class="d-xl-none d-lg-none d-md-none col-sm-8 offset-sm-2 col-xs-12">
       <h3>Password Required</h3>
-      <p>Some of my work are not public, but available in shareable format. Enter the password to unlock your access to these pieces.</p>
-      <p *ngIf="showError" [ngClass]="{'active': showError}" class="error-message error-message-mobile">error: {{ error }}</p>
       <form (ngSubmit)="submit()">
         <div class="form-group password-field">
           <input type="password" placeholder="Password" name="password" class="form-control" [(ngModel)]="password" />
@@ -37,7 +35,9 @@
           <button class="btn btn-primary" type="submit">Unlock</button>
         </div>
       </form>
-      <div class="message mobile">
+      <p *ngIf="showError" [ngClass]="{'active': showError}" class="error-message error-message-mobile">error: {{ error }}</p>
+      <div class="message">
+        <p>Some of my work are not public, but available in shareable format. Enter the password to unlock your access to these pieces.</p><br>
         <p>If you have not got the password, send me a message here.</p>
         <a href="mailto:chgm.bunbuker@gmail.com">chgm.bunbuker[at]gmail.com</a>
       </div>
