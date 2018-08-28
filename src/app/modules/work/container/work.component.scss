@@ -1,12 +1,98 @@
+@import '../../../../assets/styles/colors';
+
 .work-overview {
   .project-thumb {
     padding-top: 100%;
     margin-bottom: 30px;
     background: #D7D7D7;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    &::before {
+      position: absolute;
+      width: calc(100% - 30px);
+      height: calc(100% - 30px);
+      content: '';
+      z-index: 10;
+      top: 0;
+      left: 15px;
+      background: #000;
+      opacity: 0.4;
+      transition: opacity .25s ease-in-out;
+    }
 
     // temporary class for debugging purpose
     &.secured {
       background: #FFD777;
+    }
+
+    .title {
+      position: absolute;
+      bottom: 50%;
+      left: 0;
+      width: 100%;
+      z-index: 15;
+      transition: bottom .25s ease-in-out;
+
+      .title-copy {
+        color: $color-white;
+      }
+    }
+
+    .caption {
+      position: absolute;
+      top: 40%;
+      left: 0;
+      width: 100%;
+      padding: 30px;
+      text-align: left;
+      opacity: 0;
+      z-index: 15;
+      transition: opacity .25s ease-in-out;
+
+      .caption-copy {
+        color: $color-white;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      &::before {
+        opacity: 0.65;
+      }
+
+      .title {
+        bottom: 60%;
+      }
+
+      .caption {
+        opacity: 1;
+      }
+    }
+
+    &#magritte {
+      background-image: url('src/assets/images/projects/magritte/magritte-thumb.jpg');
+    }
+
+    &#ubiquitel {
+      background-image: url('src/assets/images/projects/ubiquitel/ubiquitel-thumb.jpg');
+    }
+
+    &#roygbiv {
+      background-image: url('src/assets/images/projects/roygbiv/roygbiv-thumb.jpg');
+    }
+
+    &#protophone {
+      background-image: url('src/assets/images/projects/protophone/protophone-thumb.jpg');
+    }
+
+    &#dropnotes {
+      background-image: url('src/assets/images/projects/dropnotes/dropnotes-thumb.jpg');
+    }
+
+    &#arc {
+      background-image: url('src/assets/images/projects/arc/arc-thumb.jpg');
     }
   }
 }

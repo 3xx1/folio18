@@ -9,6 +9,11 @@ import { SharedModule } from '../../shared/shared.module';
 /* Container */
 import { WorkContainer } from './container/work.component';
 
+/* Projects - Public */
+import { WorkTemplateUbiquitel } from './project/public/ubiquitel/ubiquitel.component';
+import { WorkTemplateRoygbiv } from './project/public/roygbiv/roygbiv.component';
+import { WorkTemplateProtophone } from './project/public/protophone/protophone.component';
+
 /* Components */
 import { LayoutDefaultComponent } from '../../shared/layout-default/layout-default.component';
 
@@ -16,14 +21,24 @@ const routes: Routes = [
   {
     path: '', component: LayoutDefaultComponent,
     children: [
-      { path: 'work', component: WorkContainer }
+      { path: 'work', component: WorkContainer },
+
+      // projects - public
+      { path: 'work/ubiquitel', component: WorkTemplateUbiquitel },
+      { path: 'work/roygbiv', component: WorkTemplateRoygbiv },
+      { path: 'work/protophone', component: WorkTemplateProtophone }
     ]
   },
   { path: '**', redirectTo: 'work' }
 ];
 
 const components = [
-  WorkContainer
+  WorkContainer,
+
+  // projects - public
+  WorkTemplateUbiquitel,
+  WorkTemplateRoygbiv,
+  WorkTemplateProtophone
 ];
 
 @NgModule({
