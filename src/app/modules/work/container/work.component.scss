@@ -46,7 +46,7 @@
       left: 0;
       width: 100%;
       padding: 30px;
-      text-align: left;
+      // text-align: left;
       opacity: 0;
       z-index: 15;
       transition: opacity .25s ease-in-out;
@@ -74,30 +74,39 @@
     &#magritte {
       background-image: url('src/assets/images/projects/magritte/magritte-thumb.jpg');
     }
+
     &#ubiquitel {
       background-image: url('src/assets/images/projects/ubiquitel/ubiquitel-thumb.jpg');
     }
+
     &#roygbiv {
       background-image: url('src/assets/images/projects/roygbiv/roygbiv-thumb.jpg');
     }
+
     &#protophone {
       background-image: url('src/assets/images/projects/protophone/protophone-thumb.jpg');
     }
+
     &#dropnotes {
       background-image: url('src/assets/images/projects/dropnotes/dropnotes-thumb.jpg');
     }
+
     &#arc {
       background-image: url('src/assets/images/projects/arc/arc-thumb.jpg');
     }
+
     &#trace {
       background-image: url('src/assets/images/projects/trace/trace-thumb.jpg');
     }
+
     &#shelltone {
       background-image: url('src/assets/images/projects/shelltone/shelltone-thumb.jpg');
     }
+
     &#puppetto {
       background-image: url('src/assets/images/projects/puppetto/puppetto-thumb.jpg');
     }
+
     &#avpixel {
       background-image: url('src/assets/images/projects/avpixel/avpixel-thumb.jpg');
     }
