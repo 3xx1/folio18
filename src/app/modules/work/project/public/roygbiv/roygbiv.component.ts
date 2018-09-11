@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'work-roygbiv',
   templateUrl: './roygbiv.component.html',
-  styleUrls: [ './roygbiv.component.scss' ],
+  styleUrls: [ './roygbiv.component.scss', '../../project.scss' ],
   providers: []
 })
 
