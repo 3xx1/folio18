@@ -1,14 +1,38 @@
 <div class="project-container">
-  <div class="video-container">
-    <iframe class="embedded-video" src="https://www.youtube.com/embed/VQ1F0UEbk_Y" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <h3 class="page-title">Roygbiv</h3>
   <div class="row">
-    <div class="col-sm-12">
-      <h5 class="subheader">Overview</h5>
-      <p>This is a music video for an electronica band, UQiYO’s single cut song titled “ROYGBIV”, which stands for initials of each color in a rainbow. I implemented a few algorithmic effects to process input clips: a line drawing effect with OpenCV, a fluid simulation effect and a deep learning style transfer. Even though the original videos are just ordinary sceneries and objects found in NYC, these different visual effects curve a storyline in the transition of scenes and illuminate different perspective of how humans can differently perceive a scenery.</p>
-      <h5 class="subheader">Responsibilitles</h5>
-      <h5 class="subheader">Process</h5>
+    <div class="col-12">
+      <h3 class="page-title">Roygbiv</h3>
+    </div>
+    <div class="col-md-12 d-lg-none">
+      <div class="video-container">
+        <iframe class="embedded-video" src="https://www.youtube.com/embed/VQ1F0UEbk_Y" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12">
+      <div class="text-container">
+        <h5 class="subheader">Overview</h5>
+        <p>This is a music video for an electronica band, UQiYO’s single cut song titled “ROYGBIV”, which stands for initials of each color in a rainbow.</p>
+        <p>I implemented a few algorithmic effects to process input clips: a line drawing effect with OpenCV, a fluid simulation effect and a deep learning style transfer. Even though the original videos are just ordinary sceneries and objects found in NYC, these different visual effects curve a storyline in the transition of scenes and illuminate different perspective of how humans can differently perceive a scenery.</p>
+      </div>
+      <div class="text-container">
+        <h5 class="subheader">Responsibilitles</h5>
+        <p>I was responsible for art direction, technical direction/implementation and film direction/editing.</p>
+      </div>
+      <div class="text-container">
+        <h5 class="subheader">Technologies &amp; Tools</h5>
+        <p>Processing (OpenCV, Fluid Simulation), Python &amp; Lua (Deep learning style transfer), Adobe Premiere</p>
+      </div>
+      <div class="text-container">
+        <h5 class="subheader">Process</h5>
+        <p>I was asked for the production of this video only with two constraints: to use iPhone video clips that the artist captured scenery in NYC and to finish it up in 2 weeks.</p>
+        <p>At the beginning of the process, I started with visualizing transition of the song and mapping its dynamics to timeline. I used this dynamics graph to determine high level sequence of visual effect transition. With this, I also came up with an abstract and subtle storyline behind scene transition based on lyrics: it starts with a colorless world, you start to pick colors up again as you walk, but things start to distort and recompose, and eventually the world starts to look a little lunatic and illuminated.</p>
+        <p>After setting this direction, I picked a few different programatic visual effects to process input clips: 1) a line drawing effect with openCV contour detection to represent colorless world, 2) fluid simulation to represent distortion of the world and 3) deep learning style transfer to represent the recomposition of the world. I implemented #1 and #2 with Processing, and #3 with Python and Lua, referencing some available libraries. I chopped all input scenes into single image, process all frames, and stitched them after all with video editing software (Adobe Premiere).</p>
+      </div>
+    </div>
+    <div class="col-lg-6 d-none d-lg-block">
+      <div class="video-container">
+        <iframe class="embedded-video" src="https://www.youtube.com/embed/VQ1F0UEbk_Y" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 </div>

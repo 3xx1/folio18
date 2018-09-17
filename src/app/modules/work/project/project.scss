@@ -2,11 +2,11 @@
 
 .project-container {
   .page-title {
-    padding-top: 30px; 
+    padding-bottom: 10px;
   }
 
   .subheader {
-    padding: 30px 0 10px 0;
+    padding-bottom: 10px;
     text-transform: uppercase;
   }
 
@@ -16,6 +16,7 @@
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
+    margin-bottom: 30px;
 
     .embedded-video {
       position: absolute;
@@ -24,5 +25,9 @@
       width: 100%;
       height: 100%;
     }
+  }
+
+  .text-container {
+    margin-bottom: 30px;
   }
 }
